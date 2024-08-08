@@ -1,0 +1,17 @@
+body{
+    background-color: blanchedalmond;
+    text-align: center;
+}
+h1{
+    width: 150px;
+    padding: 7px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 60px;
+    border-radius: 30px;
+    background-color: orange;
+    color: #ddd;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+    margin: auto;
+}

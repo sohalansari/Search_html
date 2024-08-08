@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Filling</title>
+    <link rel="stylesheet" href="otp_page.css">
+    <link rel="icon" href="photos/head2.jpg">
+</head>
+<body>
+    <div id="otp-container"></div>
+    <br><br>
+    <button type="submit" id="submit" disabled>Submit</button>
+
+    <script>
+        const otpContainer = document.getElementById('otp-container');
+        const submitBtn = document.getElementById('submitBtn');
+        const numberOfDigits = 4;
+
+        for (let i = 0; i < numberOfDigits; i++) {
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.maxLength = 1;
+            input.addEventListener('input', handleInput);
+            otpContainer.appendChild(input);
+        }
+
+        function handleInput(e) {
+            const nextInput = e.target.nextElementSibling;
+            const prevInput = e.target.previousElementSibling;
+
+            if (isNaN(e.data) || e.data === ' ') {
+                e.target.value = '';
+                return;
+            }
+
+            if (nextInput && e.target.value !== '') {
+                nextInput.focus();
+            }
+
+            if (prevInput && e.target.value === '') {
+                prevInput.focus();
+            }
+
+            checkIfAllInputsFilled();
+        }
+
+        function checkIfAllInputsFilled() {
+            const inputs = Array.from(document.querySelectorAll('#otp-container input'));
+            const isFilled = inputs.every(input => input.value !== '');
+
+            submitBtn.disabled = !isFilled;
+        }
+    </script>
+</body>
+</html>

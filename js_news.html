@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Documentry of node.js</title>
+    <link rel="stylesheet" href="js_news.css">
+    <link rel="icon" href="photos/head2.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="image-container">
+        <img src="photos/js1.png" alt="Hover Image">
+        <div class="overlay">
+            <p>Node.js continues to evolve, with frequent releases and improvements, making it a powerful and
+                 versatile platform for various types of applications.</p>
+        </div>
+    </div>
+    <h1>What is Node.js?</h1>
+    <h2>JavaScript Runtime:</h2>
+    <li>Node.js is an open-source, cross-platform JavaScript runtime built on the V8 JavaScript engine It allows
+         you to execute JavaScript code on the server side.</li>
+         <h2>Event-Driven and Asynchronous:</h2>
+         <li>Node.js is designed to be event-driven and asynchronous, making it well-suited for handling 
+            concurrent operations without the need for threads.</li>
+            <h2>Single-Threaded, Non-Blocking I/O:</h2>
+            <li>Node.js operates on a single-threaded event loop, efficiently managing asynchronous operations.
+                 This non-blocking I/O model enhances scalability and performance.</li>
+                 <h2>npm (Node Package Manager):</h2>
+                 <li>npm is the default package manager for Node.js, enabling developers to share and manage
+                     libraries and dependencies easily.</li>
+                     <h2>Packages and npm:</h2>
+                     <li>npm facilitates the installation and management of third-party packages 
+                        (libraries and tools) for Node.js. It has a vast ecosystem of packages available for 
+                        various purposes.</li>
+                        <br>
+                        <a href="https://nodejs.org/en">Read more</a>
+
+                        <div class="buttons-container">
+                            <i class='bx bxs-like bx-flip-horizontal bx-tada' id="m">
+                                <button class="like-button" onclick="handleLike()">Like</button>
+                            </i>
+                            <i class='bx bxs-dislike bx-flip-vertical bx-tada' id="n">
+                                <button class="dislike-button" onclick="handleDislike()">Dislike</button>
+                            </i>
+                            
+                        </div>
+                    
+                        <script src="like.js"></script>
+</body>
+</html>

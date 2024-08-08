@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    text-align: center;
+    color: lab(from 45deg #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #f0e6e6;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+.faq {
+    margin-bottom: 1em;
+}
+
+h3 {
+    color: #555;
+}
+
+address {
+    margin-top: 1em;
+}

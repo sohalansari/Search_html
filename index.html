@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Stuffy.com</title>
+    <link rel="icon" href="photos/head2.jpg">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+
+
+    <div id="page1">
+        <div class="web">
+            <div class="name">
+                <h4>stuffy</h4>
+            </div>
+                <div class="search-container">
+                    <form action="https://www.bing.com/" method="get">
+                        <button id="search-button"><img src="photos/icon.png" alt="Search"></button>
+                      <input type="text" class="search-box" name="q"  placeholder="Stuffy Search" title="Search" required>
+                      <button id="voice-button"><img src="photos/voicegg.png" alt="Voice Search" title="search by voice"></button>
+                    </form>
+                  </div>
+                  <div class="herf">
+                    <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&ifkv=ASKXGp3EmCa-5EC7JXbu9BVDvjX6PHqVy5hO1oW6DWdoSBU5bBj-7k1YVxdeZy_zVHzvxzoliv1IFw&osid=1&passive=1209600&service=mail&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-552761162%3A1704176005956013&theme=glif" class="gmail-logo" target="_blank" id="link">Gmail</a>
+                    <a href="https://www.instagram.com/accounts/login/" class="instagram-logo" target="_blank">Instagram</a>
+                    <a href="https://www.facebook.com/?_rdr" class="facebook-logo" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/i/flow/login" class="twitter-logo" target="_blank">Twitter</a>
+                        <a href="https://www.youtube.com/" class="youtube-logo" target="_blank">YouTube</a>
+                        <a href="contect.html" class="contect-logo">Help<i class='bx bx-chevron-down' style='color:#040000' ></i></a>
+                        
+        <div class="container">
+            <nav>
+              <ul>
+                <li><a href="#" id="log" onclick="openLoginModal()">. Login . </a></li>
+              </ul>
+            </nav>
+            <!-- Login Modal -->
+            <div id="loginModal" class="modal">
+              <div class="modal-content">
+                <span class="close" onclick="closeLoginModal()">&times;</span>
+                <div class="login-container">
+                  <h2>Login</h2>
+                  <form id="loginForm" onsubmit="return false;">
+
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <div class="show">
+                        <button type="button" id="toggleButton" onclick="togglePassword()">Show</button>
+                    </div>
+
+                    <div class="options">
+                        <a href="forget_email.html" class="forgot-password">Forgot Password?</a>
+                        <span class="separator"> | </span>
+                        <a href="createprofile.html" class="create-account">Create Account</a>
+                    </div>
+
+                    <button  onclick="login()">Login</button>
+                  </form>
+                  <div id="loginResult"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+                  </div>
+        </div>
+
+        
+      <br>
+      <div class="new">
+         <h5>-Some news and some pictures of related a Nature -</h5>
+      </div>
+      <div class="info">
+            <div class="pic">
+              <a href="img1.html">
+                  <img id="photos" src="photos/images.jpg">
+                  </a>
+            </div>
+            <div class="pic">
+              <a href="forest.html">
+                  <img id="photos" src="photos/images (1).jpg">
+                  </a>
+            </div>
+            <div class="pic">
+              <a href="ocean.html">
+                  <img id="photos" src="photos/images (2).jpg">
+                  </a>
+            </div>
+            <div class="pic">
+              <a href="code_info.html">
+                  <img id="photos" src="photos/html.jpg">
+              </a>
+            </div>
+            <div class="pic">
+              <a href="js_news.html">
+                  <img id="photos" src="photos/js2.jpg">
+              </a>
+            </div>
+            <div class="pic">
+              <a href="news_box.html">
+                  <img id="photos" src="photos/news1.jpg">
+              </a>
+            </div>
+      </div>
+       <div class="script">
+        <div id="Serach-result"></div>
+        <script src="script.js"></script>
+       </div>
+    </div>
+    <div id="page2">
+        <div class="course">
+            <h1 id="font">Web Info</h1>
+            <br>
+            <div class="row">
+                <div class="course-col">
+                    <h3>Functions:</h3>
+                    <p>Crawling: Search engines continuously browse the web, discovering and indexing web pages.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Definition:</h3>
+                    <p>A search engine is a web-based tool or software that allows users to search for 
+                        information on the internet. It uses algorithms to index web pages, retrieve relevant
+                         results, and present them to users based on their queries.</p>
+                </div>
+                <div class="course-col">
+                    <h3>Functions:</h3>
+                    <p>Indexing: The process of storing and organizing information about web pages in a database.</p>
+                </div>
+            </div> 
+        <div class="page3">
+                <div class="heading">
+                    <h3>*Creater-Info*</h3>
+                </div>
+            <section class="photo-gallery">
+                <div class="photo">
+                    <img src="photos/WhatsApp Image 2024-01-16 at 1.55.41 PM.jpeg" alt="Lighting Photo 1">
+                </div>
+                <div class="photo">
+                    <img src="photos/n.jpg" alt="Lighting Photo 2">
+                </div>
+                <div class="photo">
+                    <img src="photos/m.jpg" alt="Lighting Photo 2">
+                </div>
+            </section>
+            <br>
+            <div class="ro">
+                <div class="course-col">
+                    <h2>*Sohal Ansari*</h2>
+                    <p>This is the CEO of this company</p>
+                </div>
+                <div class="course-col">
+                    <h2>*Sohal Ansari*</h2>
+                    <p>This is a Devloper for this website</p>
+                </div>
+                <div class="course-col">
+                    <h2>*Sakib Ansari*</h2>
+                    <p>This is a normal Diginar on this website</p>
+                </div>
+            </div>
+            <section class="pro">
+                <div class="icon">
+                    <div class="box">
+                        <i class='bx bxl-instagram-alt' id="ins"></i>
+                        <a href="https://www.instagram.com/sohail_____.02?igsh=MW4yNXhjMHZpOGp6OA== id="instagram">Instagram</a>
+                    </div>
+                    <div class="box">
+                        <i class='bx bxl-linkedin' id="in"></i>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                    <div class="box">
+                        <i class='bx bxl-whatsapp' style='color:#05f549'  id="wh"></i>
+                        <a href="https://wa.me/+918574814934" id="WhatsApp">WhatsApp</a>
+                    </div>
+                    <div class="box">
+                        <i class='bx bxl-github' id="gi"></i>
+                        <a href="https://github.com/sohalansari/sohalansari" id="github">github</a>
+                    </div>
+                    <div class="box">
+                        <i class='bx bxl-facebook-square' id="fa"></i>
+                        <a href="https://www.facebook.com/sohal.ansari.39904?mibextid=ZbWKwL" id="facebook">Facebook</a>
+                    </div>
+
+                </div>
+                <div class="buttons-container">
+                    <i class='bx bxs-like' id="m">
+                        <button class="like-button" onclick="handleLike()">Like</button>
+                    </i>
+                    <i class='bx bxs-dislike' id="n">
+                        <button class="dislike-button"  onclick="handleDislike()">Dislike</button>
+                    </i>
+                    
+                </div>
+            </section>
+        </div>
+            <footer>
+                &copy; 2024 Search Engen
+            </footer>
+        </div>
+        <script src="like.js"></script>
+    </div>
+
+        
+    <script>    
+        const searchInput = document.getElementById('search-input');
+        const searchButton = document.getElementById('search-button');
+        const voiceButton = document.getElementById('voice-button');
+      
+        // Function to handle voice search
+        function handleVoiceSearch() {
+          // Your voice search logic goes here
+          alert('Voice search functionality will be implemented here');
+        }
+      
+        // Event listener for search button click
+        searchButton.addEventListener('click', function() {
+          const searchTerm = searchInput.value.trim();
+          if (searchTerm !== '') {
+            // Your search logic goes here
+            alert('Searching for: ' + searchTerm);
+          } else {
+            alert('Please enter a search term');
+          }
+        });
+      
+        // Event listener for voice search button click
+        voiceButton.addEventListener('click', handleVoiceSearch);
+      </script>
+      
+      <script>
+        // Open the login modal
+function openLoginModal() {
+        document.getElementById('loginModal').style.display = 'block';
+      }
+      
+      // Close the login modal
+      function closeLoginModal() {
+        document.getElementById('loginModal').style.display = 'none';
+      }
+      
+      // Perform login
+      function login() {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+      
+      }
+      </script>
+      <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const toggleButton = document.getElementById('toggleButton');
+    
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleButton.textContent = 'Hide';
+            } else {
+                passwordInput.type = 'password';
+                toggleButton.textContent = 'Show';
+            }
+        }
+    </script>
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search products..." required>
+            <button type="submit" id="searchButton">Search</button>
+          </form>
+ </body>
+</html>

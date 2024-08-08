@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background: url('photos/futuristic-background-design_23-2148503793.avif') no-repeat center center fixed;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    background:linear-gradient(90deg,#00ffff,#ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+form {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    border-radius: 10px;
+    margin: 10px 0;
+    color: #555;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.login button {
+    width: 250px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #327a36;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.forgot-password,
+.create-account {
+    text-decoration: none;
+    color: #333;
+}
+
+.separator {
+    margin: 0 10px;
+    color: #555;
+}
+
+.show button{
+    padding: 10px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right:180px;
+    border-radius: 10PX;
+}
